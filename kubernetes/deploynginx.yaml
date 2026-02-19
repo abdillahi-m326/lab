@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: firstdeploy
+  name: firstdeploy
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: firstdeploy
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: firstdeploy
+    spec:
+      containers:
+      - image: nginx:1.28.2-alpine
+        name: nginx
