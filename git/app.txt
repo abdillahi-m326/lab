@@ -1,1 +1,2 @@
 line 1: app started
+Line 2: logging enabled
