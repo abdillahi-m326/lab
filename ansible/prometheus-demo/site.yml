@@ -1,0 +1,6 @@
+---
+- name: Install and configure external Prometheus server
+  hosts: prometheus_servers
+  become: true
+  roles:
+    - prometheus

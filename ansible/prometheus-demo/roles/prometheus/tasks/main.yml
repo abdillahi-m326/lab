@@ -1,0 +1,6 @@
+---
+- name: Install Prometheus
+  ansible.builtin.import_tasks: install.yml
+
+- name: Configure Prometheus
+  ansible.builtin.import_tasks: configure.yml
